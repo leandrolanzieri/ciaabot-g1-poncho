@@ -1,0 +1,315 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Poncho_Esqueleto
+LIBS:LM2577HV-ADJ
+LIBS:pololu_a4988
+LIBS:poncho_ciaabot_g1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "CIAABOT G1"
+Date "2017-05-09"
+Rev "1.0.0"
+Comp "Proyecto CIAA - COMPUTADORA INDUSTRIAL ABIERTA ARGENTINA"
+Comment1 ""
+Comment2 "Autores y Licencia del template (Diego Brengi - UNLaM)"
+Comment3 "Autor del poncho (Leandro Lanzieri Rodríguez). Ver directorio \"doc\""
+Comment4 "CÓDIGO PONCHO: CIAABOT G1"
+$EndDescr
+$Sheet
+S 5150 2150 900  1300
+U 59113232
+F0 "Conector" 60
+F1 "Conector.sch" 60
+F2 "CH_3" I R 6050 2250 60 
+F3 "CH_2" I R 6050 2350 60 
+F4 "CH_1" I R 6050 2450 60 
+F5 "SERVO_1" I R 6050 2650 60 
+F6 "SERVO_2" I R 6050 2750 60 
+F7 "SERVO_3" I R 6050 2850 60 
+F8 "MOT_STEP_1" I R 6050 3050 60 
+F9 "MOT_STEP_2" I R 6050 3150 60 
+F10 "MOT_DIR_1" I R 6050 3250 60 
+F11 "MOT_DIR_2" I R 6050 3350 60 
+F12 "GPIO_1" I L 5150 2250 60 
+F13 "GPIO_2" I L 5150 2350 60 
+$EndSheet
+$Sheet
+S 3550 2150 950  1300
+U 59114D04
+F0 "Fuente" 60
+F1 "Fuente.sch" 60
+$EndSheet
+$Sheet
+S 6750 2150 900  1300
+U 591184BB
+F0 "Motores" 60
+F1 "Motores.sch" 60
+F2 "MOT_A_DIR" O L 6750 3250 60 
+F3 "MOT_A_STEP" O L 6750 3050 60 
+F4 "MOT_B_DIR" O L 6750 3350 60 
+F5 "MOT_B_STEP" O L 6750 3150 60 
+$EndSheet
+Wire Wire Line
+	6050 3050 6750 3050
+Wire Wire Line
+	6050 3150 6750 3150
+Wire Wire Line
+	6050 3250 6750 3250
+Wire Wire Line
+	6050 3350 6750 3350
+$Comp
+L CONN_02X04 J4
+U 1 1 5912807F
+P 4800 4600
+F 0 "J4" H 4800 4850 50  0000 C CNN
+F 1 "CONN_02X04" H 4800 4350 50  0000 C CNN
+F 2 "" H 4800 3400 50  0001 C CNN
+F 3 "" H 4800 3400 50  0001 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR01
+U 1 1 59128146
+P 4350 4250
+F 0 "#PWR01" H 4350 4100 50  0001 C CNN
+F 1 "+12V" H 4350 4390 50  0000 C CNN
+F 2 "" H 4350 4250 50  0001 C CNN
+F 3 "" H 4350 4250 50  0001 C CNN
+	1    4350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4250 4350 4450
+Wire Wire Line
+	4350 4450 4550 4450
+$Comp
+L +5V #PWR02
+U 1 1 591282A1
+P 5300 4250
+F 0 "#PWR02" H 5300 4100 50  0001 C CNN
+F 1 "+5V" H 5300 4390 50  0000 C CNN
+F 2 "" H 5300 4250 50  0001 C CNN
+F 3 "" H 5300 4250 50  0001 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4250 5300 4450
+Wire Wire Line
+	5300 4450 5050 4450
+$Comp
+L GND #PWR03
+U 1 1 59128876
+P 4350 4900
+F 0 "#PWR03" H 4350 4650 50  0001 C CNN
+F 1 "GND" H 4350 4750 50  0000 C CNN
+F 2 "" H 4350 4900 50  0001 C CNN
+F 3 "" H 4350 4900 50  0001 C CNN
+	1    4350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4900 4350 4750
+Wire Wire Line
+	4350 4750 4550 4750
+Text Label 5300 4550 0    60   ~ 0
+SEN_1
+Text Label 5300 4650 0    60   ~ 0
+SEN_2
+Text Label 5300 4750 0    60   ~ 0
+SEN_3
+Wire Wire Line
+	5300 4550 5050 4550
+Wire Wire Line
+	5300 4650 5050 4650
+Wire Wire Line
+	5300 4750 5050 4750
+Text Label 4350 4550 2    60   ~ 0
+SEN_4
+Text Label 4350 4650 2    60   ~ 0
+SEN_5
+Wire Wire Line
+	4350 4550 4550 4550
+Wire Wire Line
+	4350 4650 4550 4650
+Wire Notes Line
+	3900 4000 3900 5150
+Wire Notes Line
+	3900 5150 5750 5150
+Wire Notes Line
+	5750 5150 5750 4000
+Wire Notes Line
+	5750 4000 3900 4000
+Wire Notes Line
+	4200 5150 4450 5450
+Wire Notes Line
+	4450 5450 4700 5450
+Text Notes 5550 5450 2    60   ~ 0
+Conector Sensores
+Text Label 6300 2250 0    60   ~ 0
+SEN_1
+Text Label 6300 2350 0    60   ~ 0
+SEN_2
+Text Label 6300 2450 0    60   ~ 0
+SEN_3
+Wire Wire Line
+	6300 2250 6050 2250
+Wire Wire Line
+	6300 2350 6050 2350
+Wire Wire Line
+	6300 2450 6050 2450
+Text Label 4900 2250 2    60   ~ 0
+SEN_4
+Text Label 4900 2350 2    60   ~ 0
+SEN_5
+Wire Wire Line
+	4900 2250 5150 2250
+Wire Wire Line
+	4900 2350 5150 2350
+$Comp
+L CONN_01X03 J5
+U 1 1 5912D7AE
+P 7650 4100
+F 0 "J5" H 7650 4300 50  0000 C CNN
+F 1 "CONN_01X03" V 7750 4100 50  0000 C CNN
+F 2 "" H 7650 4100 50  0001 C CNN
+F 3 "" H 7650 4100 50  0001 C CNN
+	1    7650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 J6
+U 1 1 5912D87B
+P 7650 4650
+F 0 "J6" H 7650 4850 50  0000 C CNN
+F 1 "CONN_01X03" V 7750 4650 50  0000 C CNN
+F 2 "" H 7650 4650 50  0001 C CNN
+F 3 "" H 7650 4650 50  0001 C CNN
+	1    7650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 J7
+U 1 1 5912D918
+P 7650 5200
+F 0 "J7" H 7650 5400 50  0000 C CNN
+F 1 "CONN_01X03" V 7750 5200 50  0000 C CNN
+F 2 "" H 7650 5200 50  0001 C CNN
+F 3 "" H 7650 5200 50  0001 C CNN
+	1    7650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR04
+U 1 1 5912DF73
+P 7200 3850
+F 0 "#PWR04" H 7200 3700 50  0001 C CNN
+F 1 "+12V" H 7200 3990 50  0000 C CNN
+F 2 "" H 7200 3850 50  0001 C CNN
+F 3 "" H 7200 3850 50  0001 C CNN
+	1    7200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4550 7450 4550
+Connection ~ 7200 4550
+Wire Wire Line
+	7450 4000 7200 4000
+Connection ~ 7200 4000
+$Comp
+L GNDPWR #PWR05
+U 1 1 5912E16C
+P 7050 5400
+F 0 "#PWR05" H 7050 5200 50  0001 C CNN
+F 1 "GNDPWR" H 7050 5270 50  0000 C CNN
+F 2 "" H 7050 5350 50  0001 C CNN
+F 3 "" H 7050 5350 50  0001 C CNN
+	1    7050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5400 7050 4200
+Wire Wire Line
+	7050 4200 7450 4200
+Wire Wire Line
+	7450 4750 7050 4750
+Connection ~ 7050 4750
+Wire Wire Line
+	7200 5100 7450 5100
+Connection ~ 7200 5100
+Wire Wire Line
+	7200 3850 7200 5100
+Wire Wire Line
+	7450 5300 7050 5300
+Connection ~ 7050 5300
+Text Label 6600 4100 2    60   ~ 0
+SERVO_1
+Text Label 6600 4650 2    60   ~ 0
+SERVO_2
+Text Label 6600 5200 2    60   ~ 0
+SERVO_3
+Wire Wire Line
+	6600 4100 7450 4100
+Wire Wire Line
+	6600 4650 7450 4650
+Wire Wire Line
+	6600 5200 7450 5200
+Text Label 6300 2650 0    60   ~ 0
+SERVO_1
+Text Label 6300 2750 0    60   ~ 0
+SERVO_2
+Text Label 6300 2850 0    60   ~ 0
+SERVO_3
+Wire Wire Line
+	6300 2650 6050 2650
+Wire Wire Line
+	6300 2750 6050 2750
+Wire Wire Line
+	6300 2850 6050 2850
+Wire Notes Line
+	6150 3600 6150 5650
+Wire Notes Line
+	6150 5650 8000 5650
+Wire Notes Line
+	8000 5650 8000 3600
+Wire Notes Line
+	8000 3600 6150 3600
+Wire Notes Line
+	8000 4850 8350 4500
+Wire Notes Line
+	8350 4500 8600 4500
+Text Notes 9400 4500 2    60   ~ 0
+Conectores Servos
+$EndSCHEMATC
