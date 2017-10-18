@@ -1,4 +1,4 @@
-update=07/10/2017 19:32:22
+update=18/10/2017 0:08:46
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,6 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=libPonchos/Poncho_Esqueleto
-LibName31=LM2577HV-ADJ
-LibName32=pololu_a4988
+LibName30=LM2577HV-ADJ
+LibName31=pololu_a4988
