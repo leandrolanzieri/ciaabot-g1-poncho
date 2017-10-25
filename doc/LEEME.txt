@@ -1,12 +1,7 @@
-TITULO PONCHO
-=============
+﻿CIAABOT G1 =============
 
-<<Colocar información mínima y propósito del Poncho. La información completa puede estar en la wiki.>>
+Este circuito es un poncho para la placa EDU-CIAA-NXP que presenta los drivers de motores y conexiones a los sensores para el modelo G1 del proyecto CIAABOT. 
 
-URL: (URL en la wiki de la CIAA)
-FUNCIÓN: Para qué sirve el Poncho.
-AUTORES/INSTITUCIONES: 
-
-
-
-<<Detalle y explicación de directorios o archivos adicionales que se incorporen.>>
+URL: http://www.proyecto-ciaa.com.ar/devwiki/doku.php?id=desarrollo:ciaa:ponchos
+FUNCIÓN: Sirve para armar el modelo G1 de la plataforma de robótica CIAABOT.
+AUTORES/INSTITUCIONES: Leandro Lanzieri Rodríguez.
